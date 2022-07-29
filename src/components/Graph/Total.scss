@@ -1,0 +1,33 @@
+@use "/src/styles/colors" as c;
+
+.Total {
+  border-top: 2px solid c.$cream;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__count {
+    &__title {
+        margin: 0;
+        color: c.$medium-brown;
+        font-size: 1rem;
+    }
+    &__total {
+        margin: 0;
+        color: c.$dark-brown;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+  }
+  &__evolution {
+    &__count {
+        margin: 0;
+        font-weight: 700;
+        color: c.$dark-brown;
+    }
+    &__subtitle {
+        margin: 0;
+        color: c.$medium-brown;
+        font-size: 1rem;
+    }
+  }
+}
