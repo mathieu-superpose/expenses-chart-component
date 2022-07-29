@@ -16,9 +16,9 @@ function Graph() {
     <div className="Graph">
       <h2 className="Graph__title">Spending - Last 7 days</h2>
       <ul className="Graph__chart">
-        {data.results.map((result) => (
+        {data.results.map((result, index) => (
           <li key={uuidv4()}>
-            <Bar result={result} maxAmount={maxAmount} />
+            <Bar result={result} maxAmount={maxAmount} index={index} />
           </li>
         ))}
       </ul>

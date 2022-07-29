@@ -4,12 +4,18 @@
   background: c.$soft-red;
   width: min(90vw, 600px);
   border-radius: 20px;
-  padding: 1.5rem 2rem;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: c.$white;
-  margin: 2rem 0;
+  margin: 2vh 0;
+  @media screen and (min-width: 768px) {
+    padding: 25px;
+  }
+  @media screen and (min-width: 900px) {
+    padding: 30px;
+  }
   &__left {
     display: flex;
     flex-direction: column;
@@ -30,6 +36,9 @@
       width: 100%;
     }
     @media screen and (min-width: 768px) {
+      width: 65px;
+    }
+    @media screen and (min-width: 900px) {
       width: 80px;
     }
   }

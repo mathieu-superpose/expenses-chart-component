@@ -3,15 +3,20 @@
 .Graph {
   width: min(90vw, 600px);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 20px;
+  margin: 0;
   background: c.$white;
+  @media screen and (min-width: 768px) {
+    padding: 25px;
+  }
+  @media screen and (min-width: 900px) {
+    padding: 30px;
+  }
   &__title {
     color: c.$dark-brown;
     font-size: 2rem;
   }
   &__chart {
-    overflow: hidden;
-
     max-width: 100%;
     list-style: none;
     display: grid;
