@@ -26,11 +26,16 @@
       font-weight: 700;
     }
   }
-  &__bar {
+  &__bar,
+  &__bar--today {
     width: 70%;
-    background: c.$soft-red;
     border-radius: 5px;
-    transition: 0.3s background-color;
+  }
+  &__bar {
+    background: c.$soft-red;
+  }
+  &__bar--today {
+    background: c.$cyan;
   }
   &__day {
     font-size: 1.1rem;
@@ -41,8 +46,8 @@
     .Bar__details {
       opacity: 1;
     }
-    .Bar__bar {
-      background: c.$cyan;
+    .Bar__bar,
+    .Bar__bar--today {
       cursor: pointer;
     }
   }
