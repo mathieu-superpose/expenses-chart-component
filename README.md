@@ -30,8 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor](https://your-solution-url.com)
-- Live Site URL: [Link](https://your-live-site-url.com)
+- Live Site URL: [Link](https://mathieu-superpose.github.io/expenses-chart-component)
 
 ## My process
 
@@ -45,4 +44,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mathieu-superpose)
