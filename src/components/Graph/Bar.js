@@ -1,6 +1,6 @@
-import './Bar.scss';
+import "./Bar.scss";
 
-const maxBarHeight = 150; // px
+const maxBarHeight = 220; // px
 
 function Bar({ result, maxAmount }) {
   return (
@@ -8,7 +8,12 @@ function Bar({ result, maxAmount }) {
       <div className="Bar__details">
         <p>${result.amount}</p>
       </div>
-      <div className="Bar__bar" style={{"height": `${Math.round(maxBarHeight * result.amount / maxAmount)}px`}} />
+      <div
+        className="Bar__bar"
+        style={{
+          height: `${Math.round((maxBarHeight * result.amount) / maxAmount)}px`,
+        }}
+      />
       <p className="Bar__day">{result.day}</p>
     </div>
   );

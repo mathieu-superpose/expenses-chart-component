@@ -1,27 +1,36 @@
-@use '/src/styles/colors' as c;
+@use "/src/styles/colors" as c;
 
 .Balance {
-    background: c.$soft-red;
-    width: min(90vw, 600px);
-    border-radius: 20px;
-    padding: 1.5rem 2rem;
+  background: c.$soft-red;
+  width: min(90vw, 600px);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: c.$white;
+  margin: 2rem 0;
+  &__left {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: c.$white;
-    margin: 2rem 0;
-    &__left {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;;
-        &__title {
-            font-size: 1.2rem;
-        }
-        &__balance {
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0;
-        }
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    &__title {
+      font-size: 1.2rem;
     }
+    &__balance {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+  &__right {
+    width: 50px;
+    & img {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 80px;
+    }
+  }
 }

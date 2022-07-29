@@ -1,20 +1,23 @@
-@use '/src/styles/colors' as c;
+@use "/src/styles/colors" as c;
 
 .Graph {
-    width: min(90vw, 600px);
-    border-radius: 20px;
-    padding: 2rem;
-    background: c.$white;
-    &__title {
-        color: c.$dark-brown;
-        font-size: 2rem;
-    }
-    &__chart {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        align-items: end;
-        gap: 5px;
-        padding: 0;
-    }
+  width: min(90vw, 600px);
+  border-radius: 20px;
+  padding: 2rem;
+  background: c.$white;
+  &__title {
+    color: c.$dark-brown;
+    font-size: 2rem;
+  }
+  &__chart {
+    overflow: hidden;
+
+    max-width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: end;
+    gap: 2px;
+    padding: 0;
+  }
 }
