@@ -44,4 +44,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mathieu-superpose)
+- Frontend Mentor - [@mathieu-superpose](https://www.frontendmentor.io/profile/mathieu-superpose)
